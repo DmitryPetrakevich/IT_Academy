@@ -92,6 +92,78 @@ button {
   background-color: #1e1e1e;
   color: white;
 }
+.card-event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 405px;
+  max-width: 100%;
+  min-width: 200px;
+  color: #1f1e1e;
+}
+.card-event__link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.card-event__link:active .card-event__title {
+  color: #8C3324;
+  text-decoration-color: #8C3324;
+}
+.card-event__picture {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+.card-event__picture::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 107.16%;
+}
+.card-event__picture-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-event__title {
+  margin: 0 0 auto;
+  min-height: 64px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #1f1e1e;
+  -webkit-transition: color 0.2s, text-decoration-color 0.2s;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+.card-event__text {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #1f1e1e;
+}
+.card-event__time {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: auto;
+  color: #1f1e1e;
+}
 .page-header {
   position: fixed;
   top: 0;
@@ -147,5 +219,9 @@ button {
   .btn:hover {
     background-color: #1e1e1e;
     color: white;
+  }
+  .card-event__link:hover .card-event__title {
+    color: #8C3324;
+    text-decoration-color: #8C3324;
   }
 }
