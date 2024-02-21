@@ -190,6 +190,12 @@ button {
   margin-top: auto;
   color: #1f1e1e;
 }
+.events {
+  padding: 140px 0 100px;
+}
+.events__listing {
+  margin-bottom: 100px;
+}
 .page-header {
   position: fixed;
   top: 0;
