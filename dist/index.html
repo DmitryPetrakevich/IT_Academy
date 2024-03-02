@@ -71,9 +71,9 @@
           и мы подберем площадку
         </h3>
         <div class="pp__form form">
-          <div class="pp__list">
+          <div class="form__list">
             <div class="form-field field">
-              <h6 class="form__title">
+              <h6 class="field__title">
                 Формат мероприятия:
               </h6>
               <div class="field__radio radio">
@@ -101,8 +101,38 @@
                   <span class="radio__name">Другое</span>
                 </label>
               </div>
+            </div>
+            <div class="form__group">
+              <div class="form__field field">
+                <h6 class="field__title">Планируемое количество посетителей:</h6>
+                <select name="amount" class="field__select">
+                  <option value="20">
+                    до 20 человек
+                  </option>
 
+                  <option value="100">
+                    до 20 до 100 человек
+                  </option>
 
+                  <option value="500">
+                    до 100 до 500 человек
+                  </option>
+
+                  <option value="501">
+                    Более 500 человек
+                  </option>
+                </select>
+
+                <div class="form__field field">
+                  <h6 class="field__title">Дата проведения::</h6>
+                  <div class="field__inputs field__inputs--w55">
+                    <input class="field__input field__input--w55 field__input--datetime" type="text" placeholder="ДД" />
+                    <input class="field__input field__input--w55 field__input--datetime" type="text" placeholder="ММ" />
+                    <input class="field__input field__input--w110 field__input--datetime" type="text" placeholder="ГГГГ" />
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
