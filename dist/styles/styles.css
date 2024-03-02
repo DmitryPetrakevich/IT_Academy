@@ -118,6 +118,78 @@ button {
   text-align: center;
   text-transform: uppercase;
 }
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.radio__label {
+  display: block;
+  margin-bottom: 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 23px;
+  min-height: 23px;
+  position: relative;
+  cursor: pointer;
+}
+.radio__label:last-child {
+  margin-bottom: 0;
+}
+.radio__input {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+.radio__input:checked ~ .radio__mark {
+  background-color: #1f1e1e;
+}
+.radio__mark {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border-radius: 50px;
+  border: 2px solid #1f1e1e;
+  padding: 3px;
+  background-clip: content-box;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.radio__name {
+  display: block;
+  margin-left: 23px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.form__title {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1f1e1e;
+}
+.form__title--mb7 {
+  margin-bottom: 7px;
+}
 .card-event {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +437,18 @@ button {
           box-sizing: border-box;
   width: 100%;
   max-width: 624px;
+}
+.is-hidden {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
 }
 @media (hover: hover) {
   .btn:hover {
