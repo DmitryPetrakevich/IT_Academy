@@ -239,11 +239,50 @@ button {
   font-size: 16px;
   color: #6c6c6c6c;
 }
+.field__label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1f1e1e;
+}
+.field__label--textarea {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1f1e1e;
+}
 .form__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  row-gap: 30px;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+}
+.form__group {
+  width: calc(50% - 30px);
+}
+.form__field {
+  width: 100%;
+}
+.form__field--w50 {
+  width: calc(50% - 30px);
+}
+.form__field--mb30 {
+  margin-bottom: 30px;
+}
+.form__label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1f1e1e;
 }
 .card-event {
   display: -webkit-box;
@@ -434,6 +473,13 @@ button {
 .pp__container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 1210px;
   width: 100%;
   margin: auto;
@@ -445,7 +491,7 @@ button {
   background-size: auto;
 }
 .pp__title {
-  margin: -110px 0 0;
+  margin: -110px 0 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 84px;
@@ -461,12 +507,15 @@ button {
 }
 .pp__sticky-close {
   position: sticky;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   top: 0;
+  width: 0;
 }
 .pp__sticky-btn {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -70px;
+  top: -100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -489,6 +538,7 @@ button {
   transition: background-color 0.2s;
 }
 .pp__form {
+  margin: auto;
   max-width: 870px;
 }
 .width_624 {

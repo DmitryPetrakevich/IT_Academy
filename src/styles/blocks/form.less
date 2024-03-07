@@ -1,7 +1,37 @@
 .form {
     &__list {
         display: flex;
-        gap: 60px;
+        flex-wrap: wrap;
+        width: 100%;
+        row-gap: 30px;
+        column-gap: 60px;
+    }
+
+    &__group {
+        width: calc(50% - 30px);
+    }
+
+    &__field {
+        width: 100%;
+
+        &--w50 {
+            width: calc(50% - 30px);
+        }
+
+        &--mb30 {
+            margin-bottom: 30px;
+
+        }
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 16px;
+        line-height: 22px;
+        color: @black;
+
+
     }
  
 }
