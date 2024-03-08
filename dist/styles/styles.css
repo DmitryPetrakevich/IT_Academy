@@ -179,6 +179,56 @@ button {
   font-size: 16px;
   line-height: 22px;
 }
+.check {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding-left: 40px;
+}
+.check__input {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+.check__input:checked ~ .check__mark {
+  background-color: #1f1e1e;
+}
+.check__input:checked ~ .check__mark::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.check__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #1f1e1e;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.check__label {
+  font-size: 14px;
+  color: #1f1e1e;
+}
 .field__title {
   margin: 0 0 10px;
   font-weight: 700;
@@ -197,17 +247,24 @@ button {
   gap: 15px;
 }
 .field__select,
-.field__input {
+.field__input,
+.field__textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
   padding: 17px 20px 16px;
   width: 100%;
-  height: 55px;
   border-radius: 5px;
   background-color: #ffffff;
   font-size: 16px;
   color: #1f1e1e;
+}
+.field__select,
+.field__input {
+  height: 55px;
+}
+.field__textarea {
+  height: 150px;
 }
 .field__input--w55 {
   width: 55px;
@@ -265,10 +322,14 @@ button {
      -moz-column-gap: 60px;
           column-gap: 60px;
 }
+.form__list--mb50 {
+  margin-bottom: 50px;
+}
 .form__group {
   width: calc(50% - 30px);
 }
 .form__field {
+  display: block;
   width: 100%;
 }
 .form__field--w50 {
@@ -277,12 +338,12 @@ button {
 .form__field--mb30 {
   margin-bottom: 30px;
 }
-.form__label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 16px;
-  line-height: 22px;
-  color: #1f1e1e;
+.form__btn {
+  max-width: 400px;
+  width: 100%;
+}
+.form__check--mb40 {
+  margin-bottom: 40px;
 }
 .card-event {
   display: -webkit-box;
