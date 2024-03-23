@@ -1,0 +1,48 @@
+.about {
+    &__container {
+        .conteiner;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 0 0 50px;
+        font-size: 44px;
+        font-weight: 700;
+        color: @black;
+    }
+
+    &__text {
+        align-self: flex-end;
+        margin: 0 0 100px;
+        max-width: 870px;
+        font-weight: 400;
+        font-size: 18px;
+        color: @black;
+    }
+
+    &__picture {
+        position: relative;
+        display: block;
+        width: 61.53%;
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 66.322%;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+}

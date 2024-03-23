@@ -512,6 +512,7 @@ button {
   text-decoration: none;
 }
 .pp {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -601,6 +602,60 @@ button {
 .pp__form {
   margin: auto;
   max-width: 870px;
+}
+.about__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about__title {
+  margin: 0 0 50px;
+  font-size: 44px;
+  font-weight: 700;
+  color: #1f1e1e;
+}
+.about__text {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0 0 100px;
+  max-width: 870px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1f1e1e;
+}
+.about__picture {
+  position: relative;
+  display: block;
+  width: 61.53%;
+}
+.about__picture::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 66.322%;
+}
+.about__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .width_624 {
   -webkit-box-sizing: border-box;
