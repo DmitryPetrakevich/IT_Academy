@@ -92,6 +92,30 @@ button {
   background-color: #1e1e1e;
   color: white;
 }
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1f1e1e;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.link:active {
+  color: #8C3324;
+}
+.link__name,
+.link__icon {
+  cursor: pointer;
+}
 .section-title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -648,6 +672,9 @@ button {
   grid-area: text;
   margin-left: auto;
 }
+.about__text--mb90 {
+  margin-bottom: 90px;
+}
 .about__picture {
   grid-area: picture1;
   position: relative;
@@ -686,6 +713,53 @@ button {
   width: 100%;
   padding-top: 122.029%;
 }
+.about__block3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 60px;
+}
+.about__picture3 {
+  max-width: 930px;
+  width: 100%;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 18px 9px 0 40px;
+}
+.about__picture3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65%;
+  background-color: #8C3324;
+}
+.about__picture3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 40.86%;
+}
+.about__img2 {
+  position: absolute;
+  top: 18px;
+  left: 49px;
+  right: 9px;
+  bottom: 0;
+  width: calc(1000% - 58px);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about__block3-wrapper {
+  max-width: 344px;
+  width: 100%;
+}
 .width_624 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -708,6 +782,9 @@ button {
   .btn:hover {
     background-color: #1e1e1e;
     color: white;
+  }
+  .link:hover {
+    color: #8C3324;
   }
   .card-event__link:hover .card-event__title {
     color: #8C3324;
