@@ -103,6 +103,8 @@ button {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  height: 0;
+  margin-left: 50px;
   font-weight: 600;
   font-size: 16px;
   color: #1f1e1e;
@@ -627,6 +629,9 @@ button {
   margin: auto;
   max-width: 870px;
 }
+.about {
+  padding-bottom: 90px;
+}
 .about__container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -662,7 +667,7 @@ button {
 .about__text {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin: 0 0 100px;
+  margin: 0 0 100px 50px;
   max-width: 870px;
   font-weight: 400;
   font-size: 18px;
@@ -720,6 +725,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   gap: 60px;
 }
 .about__picture3 {
