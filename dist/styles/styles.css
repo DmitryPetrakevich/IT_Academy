@@ -749,15 +749,6 @@ button {
 .page-footer__nav-link:active {
   color: #8C3324;
 }
-.page-footer__form-subcribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
 .pp {
   display: none;
   position: fixed;
