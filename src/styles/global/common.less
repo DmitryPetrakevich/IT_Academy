@@ -38,16 +38,59 @@ a {
     outline: none;
   }
   
-  img {
+img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
   }
 
-button {
+input,
+textarea,
+button,
+select {
     box-shadow: none;
     outline: none;
     color: #1e1e1e;
     font-family: @font1;
+}
+
+button {
     cursor: pointer;
 }
+
+input,
+textarea {
+    &::-webkit-input-placeholder {
+        color: #6c6c6c;
+    }
+    &::-moz-placeholder {
+        color: #dedede;
+    }
+    &:-moz-placeholder {
+        color: #dedede;
+    }
+    &:-ms-input-placeholder {
+        color: #dedede;
+    }
+}
+
+input:focus,
+textarea:focus {
+    &::-webkit-input-placeholder {
+        color: transparent
+    }
+    &::-moz-placeholder {
+        color: transparent
+    }
+    &:-moz-placeholder {
+        color: transparent
+    }
+    &:-ms-input-placeholder {
+        color: transparent
+    }
+}
+
+textarea {
+    resize: none;
+}
+
