@@ -251,6 +251,19 @@ textarea {
   position: relative;
   padding-left: 40px;
 }
+.check--red {
+  color: #8C3324;
+}
+.check--red .check__mark {
+  border-color: #8C3324;
+}
+.check--red .check__input:checked ~ .check__mark {
+  background-color: #8C3324;
+}
+.check--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
 .check__input {
   position: absolute !important;
   width: 0 !important;
@@ -407,11 +420,6 @@ textarea {
 .form__btn {
   max-width: 400px;
   width: 100%;
-}
-.form__btn-close {
-  max-width: 400px;
-  width: 100%;
-  margin-left: 100px;
 }
 .form__btns {
   display: -webkit-box;
@@ -680,6 +688,12 @@ textarea {
 .subscribe__submit:active {
   background-color: #8C3324;
 }
+.home {
+  padding: 100px 0;
+}
+.home__listing {
+  margin-bottom: 95px;
+}
 .article-card {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -808,6 +822,55 @@ textarea {
   height: 1px;
   background-color: #1f1e1e;
   pointer-events: none;
+}
+.reserve {
+  display: grid;
+  gap: 65px 11%;
+  grid-template-columns: 405px calc(89% - 405px);
+  grid-template-areas: "checks scheme" "order legend";
+  width: 100%;
+}
+.reserve__checks {
+  grid-area: checks;
+}
+.reserve__order {
+  grid-area: order;
+}
+.reserve__scheme {
+  grid-area: scheme;
+}
+.reserve__scheme {
+  grid-area: scheme;
+}
+.event {
+  padding: 40px 0 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.reserve {
+  display: grid;
+  gap: 65px 11%;
+  grid-template-columns: 405px calc(89% - 405px);
+  grid-template-areas: "checks scheme" "order legend";
+  width: 100%;
+}
+.reserve__checks {
+  grid-area: checks;
+}
+.reserve__order {
+  grid-area: order;
+}
+.reserve__scheme {
+  grid-area: scheme;
+}
+.reserve__scheme {
+  grid-area: scheme;
 }
 .page-header {
   position: fixed;
