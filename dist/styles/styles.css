@@ -506,6 +506,34 @@ textarea {
   padding-right: 40px;
   margin-top: 40px;
 }
+.breadcrumbs__link {
+  display: inline;
+  margin-right: 10px;
+  color: #1f1e1e;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.breadcrumbs__link::after {
+  content: "/";
+  position: relative;
+  display: inline-block;
+  left: 4px;
+  width: 0;
+  color: #1f1e1e;
+  pointer-events: none;
+}
+.breadcrumbs__link:hover {
+  color: #8C3324;
+}
+.breadcrumbs__link:last-child {
+  margin-right: 0;
+}
+.breadcrumbs__link:last-child::after {
+  display: none;
+}
 .card-event {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1317,6 +1345,11 @@ textarea {
   pointer-events: none !important;
   overflow: hidden !important;
   white-space: nowrap !important;
+}
+@media (max-width: 767px) {
+  .breadcrumbs {
+    display: none;
+  }
 }
 @media (hover: hover) {
   .btn:hover {
