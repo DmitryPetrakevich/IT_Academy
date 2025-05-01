@@ -18,8 +18,8 @@
                 место для настоящего</p>
 
             </header>
-
-            <section class="offers home__offers"></section>
+            @@include('blocks/offers.html', {class: 'home__offers'})
+            <!-- <section class="offers home__offers"></section> -->
             @@include('blocks/about.html', {class: 'home__about'})
             <section class="upcoming home__upcoming"></section>
             <section class="listing home__listing"> </section>
@@ -40,6 +40,6 @@
 
     @@include('blocks/event-pp.html')
     
-    <script src="scripts/main.js"> </script>
+    <script src="scripts/main.min.js"> </script>
   </body>
 </html>
