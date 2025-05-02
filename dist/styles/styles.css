@@ -485,6 +485,7 @@ textarea {
 }
 .main-header__title,
 .main-header__text {
+  margin-bottom: 100px;
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
@@ -634,6 +635,56 @@ body {
   font-size: 70px;
   line-height: 90px;
   text-align: center;
+}
+.offers {
+  margin-bottom: 200px;
+}
+.offers__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.offers__title {
+  margin-bottom: 45px;
+  font-family: Lora;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 2%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.offers__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 105px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.offers__button {
+  width: 260px;
+  height: 52px;
+  gap: 10px;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  background-color: none;
+}
+.offers__button--red {
+  background-color: #BC3324;
+  color: #FFFFFF;
+  border: none;
 }
 .card-event {
   display: -webkit-box;
@@ -1819,6 +1870,10 @@ body {
     font-size: 40px;
     line-height: 51px;
   }
+  .offers__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .listing {
     padding-left: 30px;
     padding-right: 30px;
@@ -2059,6 +2114,10 @@ body {
     margin-bottom: 40px;
     font-size: 20px;
     line-height: 26px;
+  }
+  .offers__container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .listing {
     padding-left: 20px;
