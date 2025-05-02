@@ -25,7 +25,7 @@
       </a>
       <nav class="page-header__nav">
         <a href="events.html" class="page-header__nav-link">Мероприятия</a>
-        <a href="blog-listing.html" class="page-header__nav-link">Блог</a>
+        <a href="blocks/blog-listing" class="page-header__nav-link">Блог</a>
         <a href="event.html" class="page-header__nav-link">О нас</a>
         <a href="default.html" class="page-header__nav-link">Контакты</a>
 
@@ -259,21 +259,88 @@
           </tfoot>
         </table>
       </section>
-      <section class="offers home__offers">
-        <div class="offers__container">
-          <h3 class="offers__title">
-            Я хочу:
-          </h3>
-          <div class="offers__buttons">
-            <button class="offers__button offers__button--red">Провести мероприятие</button>
-            <button class="offers__button">Стать арендатором</button>
+    </div>
+    <section class="offers home__offers">
+      <div class="offers__container">
+        <h3 class="offers__title">
+          Я хочу:
+        </h3>
+        <div class="offers__buttons">
+          <button class="offers__button offers__button--red">Провести мероприятие</button>
+          <button class="offers__button">Стать арендатором</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features home__features">
+      <div class="features__container">
+        <div class="features__list">
+          <div class="feature">
+            <img src="assets/images/features/feature-price.jpg" alt="feature-price" class="feature__img">
+            <h3 class="feature__title">Цены</h3>
+            <p class="feature__text">
+              Цены, указанные на сайте носят
+              информационный характер. Мы придерживаемся
+              индивидуального подхода в работе с клиентом.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="assets/images/features/feature-contact.jpg" alt="feature-price" class="feature__img">
+            <h3 class="feature__title">Цены</h3>
+            <p class="feature__text">
+              Цены, указанные на сайте носят
+              информационный характер. Мы придерживаемся
+              индивидуального подхода в работе с клиентом.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="assets/images/features/feature-advantage.jpg" alt="feature-price" class="feature__img">
+            <h3 class="feature__title">Цены</h3>
+            <p class="feature__text">
+              Цены, указанные на сайте носят
+              информационный характер. Мы придерживаемся
+              индивидуального подхода в работе с клиентом.
+            </p>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>;
   </main>
-  <footer class="page-footer"> </footer>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__border"></div>
+      <div class="page-footer__wrapper">
+        <nav class="page-footer__nav">
+          <a href="" class="page-footer__nav-link">Календарь мероприятий</a>
+          <a href="" class="page-footer__nav-link">Провести мероприятие</a>
+          <a href="" class="page-footer__nav-link">Стать арендатором</a>
+          <a href="" class="page-footer__nav-link">Наши проекты</a>
+          <a href="" class="page-footer__nav-link">Контакты</a>
+        </nav>
 
+        <form class="page-footer__form subscribe">
+          <h4 class="subscribe__title">
+            Подпишись и будь в курсе происходящего
+          </h4>
+          <div class="subscribe__wrapper">
+            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+
+            <button type="submit" class="subscribe__submit"> Подписаться </button>
+          </div>
+
+          <label class="subscribe__check check">
+            <input type="checkbox" class="check__input" name="agree" required />
+            <span class="check__mark"></span>
+            <span class="check__label"> Согласен на обработку персональных данных </span>
+          </label>
+        </form>
+
+      </div>
+    </div>
+
+  </footer>
 </body>
 
 </html>

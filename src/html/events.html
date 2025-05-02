@@ -187,11 +187,12 @@
                     </tfoot>
                   </table>
             </section>
-            @@include('blocks/offers.html', {class: 'home__offers'})
         </div>
-    </main>
-    <footer class="page-footer"> </footer>
+        @@include('blocks/offers.html', {class: 'home__offers'})
 
+        @@include('blocks/features.html', {class: 'home__features'});
+    </main>
+    @@include('blocks/page-footer.html')
 </body>
 
 </html>
