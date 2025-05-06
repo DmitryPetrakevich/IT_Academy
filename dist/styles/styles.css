@@ -675,10 +675,7 @@ body {
   width: 260px;
   height: 52px;
   gap: 10px;
-  padding-top: 15px;
-  padding-right: 40px;
-  padding-bottom: 15px;
-  padding-left: 40px;
+  padding: 15px 40px;
   background-color: none;
 }
 .offers__button--red {
@@ -1618,6 +1615,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 60px;
 }
 .page-footer__nav {
   margin-right: 30px;
@@ -1652,6 +1650,98 @@ body {
 }
 .page-footer__nav-link:active {
   color: #8C3324;
+}
+.page-footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page-footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.page-footer__copyright-item {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.page-footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 160px;
+  gap: 45px;
+}
+.page-footer-tagree {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+}
+.page-footer__politics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+}
+.page-footer__politics-item {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.page-footer__politics-item:active {
+  color: #8C3324;
+}
+.page-footer__credits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.page-footer__credits-text {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+}
+.page-footer__credits-tagree {
+  font-family: Open Sans;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
 }
 .pp {
   display: none;
@@ -2262,6 +2352,9 @@ body {
     background-color: #8C3324;
   }
   .page-footer__nav-link:hover {
+    color: #8C3324;
+  }
+  .page-footer__politics-item:hover {
     color: #8C3324;
   }
   .pp__sticky-btn:hover {

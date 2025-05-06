@@ -32,6 +32,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 60px;
     }
 
     &__nav {
@@ -70,4 +71,97 @@
             color: @red;
         }
     }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-item {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-decoration: none;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        min-width: 160px;
+        gap: 45px;
+    }
+
+    &-tagree {
+        font-family: Open Sans;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    &__politics {
+        display: flex;
+        gap: 60px;
+
+        &-item {
+            font-family: Open Sans;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-decoration: none;
+            transition: color 0.2s;
+
+            &:hover {
+                @media (hover:hover) {
+                    color: @red;
+                }
+            }
+    
+            &:active {
+                color: @red;
+            }
+        }
+    }
+
+    &__credits {
+        display: flex;
+        gap: 15px;
+
+        &-text {
+            font-family: Open Sans;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        &-tagree {
+            font-family: Open Sans;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: right;
+            vertical-align: middle;
+            
+        }
+    }
+
+
 }
