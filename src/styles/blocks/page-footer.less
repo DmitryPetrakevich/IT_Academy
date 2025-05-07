@@ -77,6 +77,13 @@
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
+
+        @media @bw768 {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+        }
     }
 
     &__copyright {
@@ -99,6 +106,14 @@
         display: flex;
         min-width: 160px;
         gap: 45px;
+
+        @media @bw1020 {
+            gap: 15px;
+        }
+
+        @media @bw768 {
+            gap: 40px;
+        }
     }
 
     &-tagree {
@@ -114,6 +129,11 @@
     &__politics {
         display: flex;
         gap: 60px;
+
+        @media @bw1020 {
+            gap: 15px;
+            flex-direction: column;
+        }
 
         &-item {
             font-family: Open Sans;
@@ -149,6 +169,7 @@
             letter-spacing: 0%;
             text-align: right;
             vertical-align: middle;
+            margin: 0;
         }
 
         &-tagree {
@@ -159,9 +180,13 @@
             letter-spacing: 0%;
             text-align: right;
             vertical-align: middle;
-            
+            margin: 0;
+        }
+
+        @media @bw1020 {
+            flex-direction: column;
+            align-items: center;
         }
     }
-
 
 }
