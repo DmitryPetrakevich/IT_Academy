@@ -636,9 +636,6 @@ body {
   line-height: 90px;
   text-align: center;
 }
-.offers {
-  margin-bottom: 100px;
-}
 .offers__container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -960,6 +957,12 @@ body {
 }
 .home__listing {
   margin-bottom: 95px;
+}
+.home__offers {
+  margin-bottom: 200px;
+}
+.home__offers-listing {
+  margin-bottom: 100px;
 }
 .article-card {
   position: relative;
@@ -1969,6 +1972,16 @@ body {
   .body {
     padding-top: 111px;
   }
+  .listing__events-list {
+    margin: 0 -20px -100px;
+  }
+  .listing__event-card {
+    width: calc(33.3333% - 40px);
+    margin: 0 20px 100px;
+  }
+  .event-card__title {
+    margin: 0 0 10px;
+  }
 }
 @media (max-width: 1339px) {
   .breadcrumbs {
@@ -1992,6 +2005,13 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .listing__events-list {
+    margin: 0 -15px -100px;
+  }
+  .listing__event-card {
+    width: calc(33.3333% - 30px);
+    margin: 0 15px 100px;
+  }
   .events__services {
     padding-left: 30px;
     padding-right: 30px;
@@ -2003,6 +2023,11 @@ body {
   .article__container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .event-card__title {
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 27px;
   }
   .page-header__conteiner {
     padding-left: 30px;
@@ -2018,6 +2043,21 @@ body {
   }
 }
 @media (max-width: 1019px) {
+  .listing__events-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 -15px -80px;
+  }
+  .listing__event-card {
+    width: calc(50% - 30px);
+    max-width: 405px;
+    margin: 0 15px 80px;
+  }
+  .event-card__description {
+    font-size: 14px;
+    line-height: 19px;
+  }
   .page-header__nav {
     position: absolute;
     left: 0;
@@ -2252,6 +2292,12 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .listing__events-list {
+    margin: 0 -10px -80px;
+  }
+  .listing__event-card {
+    margin: 0 10px 80px;
+  }
   .events__services {
     padding-left: 20px;
     padding-right: 20px;
@@ -2266,6 +2312,11 @@ body {
   .article__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .event-card__title {
+    min-height: 44px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .page-header {
     height: 70px;
@@ -2305,6 +2356,15 @@ body {
   .about__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media (max-width: 649px) {
+  .listing__events-list {
+    margin: 0 0 -60px;
+  }
+  .listing__event-card {
+    width: 100%;
+    margin: 0 0 60px;
   }
 }
 @media (hover: hover) {
