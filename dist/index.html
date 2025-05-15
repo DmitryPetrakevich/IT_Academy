@@ -69,7 +69,7 @@
             Я хочу:
           </h3>
           <div class="offers__buttons">
-            <button class="offers__button offers__button--red">Провести мероприятие</button>
+            <button class="offers__button offers__button--red" id="js-eventOpenBtn">Провести мероприятие</button>
             <button class="offers__button">Стать арендатором</button>
           </div>
         </div>
@@ -309,10 +309,10 @@
       </div>
   </footer>
 
-  <div class="pp">
+  <div class="pp" id="js-eventpp">
     <div class="pp__container">
       <div class="pp__sticky-close">
-        <button type="button" class="pp__sticky-btn">
+        <button type="button" class="pp__sticky-btn js-ppCloseBtn">
           <svg class="pp__btn-icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#X"></use>
           </svg>
@@ -442,7 +442,7 @@
                 Отправить
               </button>
 
-              <button type="button" class="form__btn btn">
+              <button type="button" class="form__btn btn js-ppCloseBtn">
                 Закрыть
               </button>
             </div>
