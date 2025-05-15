@@ -870,7 +870,7 @@ body {
   line-height: 22px;
 }
 .events {
-  padding: 140px 0 100px;
+  padding: 140px 0 50px;
 }
 .contacts__container {
   -webkit-box-sizing: border-box;
@@ -1972,6 +1972,9 @@ body {
   .body {
     padding-top: 111px;
   }
+  .section-title {
+    margin-bottom: 130px;
+  }
   .listing__events-list {
     margin: 0 -20px -100px;
   }
@@ -1984,6 +1987,12 @@ body {
   }
 }
 @media (max-width: 1339px) {
+  .section-title {
+    min-height: 52px;
+    margin-bottom: 100px;
+    padding: 11px 40px;
+    font-size: 24px;
+  }
   .breadcrumbs {
     padding-left: 30px;
     padding-right: 30px;
@@ -2165,6 +2174,12 @@ body {
   .body {
     padding-top: 70px;
   }
+  .section-title {
+    min-height: 42px;
+    margin-bottom: 80px;
+    padding: 11px 20px;
+    font-size: 20px;
+  }
   .breadcrumbs {
     padding-left: 20px;
     padding-right: 20px;
@@ -2339,6 +2354,13 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .page-footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
   .page-footer__bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2365,6 +2387,11 @@ body {
   .listing__event-card {
     width: 100%;
     margin: 0 0 60px;
+  }
+}
+@media (max-width: 599px) {
+  .section-title {
+    font-size: 16px;
   }
 }
 @media (hover: hover) {
