@@ -25,7 +25,9 @@
             <section class="listing home__listing"> </section>
 
             <!-- prettier-ignore -->
+             @@include('blocks/upcoming.html', {"class": "home__listing"})
             @@include('blocks/blog-listing.html', {"class": "home__listing"})
+            
 
             @@include('blocks/contacts.html', {class: 'home__contacts'})
 
@@ -41,5 +43,6 @@
     @@include('blocks/event-pp.html')
     
     <script src="scripts/main.min.js"> </script>
+    <script src="scripts/swiper.min.js"> </script>
   </body>
 </html>

@@ -1,0 +1,98 @@
+<section class="upcoming @@class">
+  <div class="upcoming__wrapper">
+    <div class="upcoming__conainer">
+      <h2 class="upcoming__title section-title">Мероприятия</h2>
+      <div class="upcoming__swiper swiper swiper--3s js-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- prettier-ignore -->
+            @@include('event-card.html', {
+            "class": "",
+            "img": "assets/images/Nirvana.jpg",
+            "img_webp": "assets/images/events/nirvana.webp",
+            "alt": "nirvana",
+            "title": "Собираемся и слушаем альбом Nirvana.",
+            "descr": "Это третий альбом группы...",
+            "time": "07.12.2022 | начало 18.00",
+            "datetime": "2022-12-07T18:00"
+            })
+          </div>
+          <div class="swiper-slide">
+            @@include('event-card.html', {
+            "class": "listing__event-card",
+            "img": "assets/images/picture_2.jpg",
+            "alt": "nirvana",
+            "title": "Есть тема, нужно обсудить с HowStuffWorks",
+            "descr": "Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.",
+            "time": "14.12.2022 | начало 18.30",
+            "datetime": "2022-12-07T18:00"
+            })
+          </div>
+          <div class="swiper-slide">
+            @@include('event-card.html', {
+            "class": "",
+            "img": "assets/images/picture_3.jpg",
+            "img_webp": "assets/images/events/nirvana.webp",
+            "alt": "nirvana",
+            "title": "Собираемся и слушаем альбом Nirvana.",
+            "descr": "Это третий альбом группы...",
+            "time": "07.12.2022 | начало 18.00",
+            "datetime": "2022-12-07T18:00"
+            })
+          </div>
+          <div class="swiper-slide">
+            @@include('event-card.html', {
+            "class": "",
+            "img": "assets/images/picture_4.jpg",
+            "img_webp": "assets/images/events/nirvana.webp",
+            "alt": "nirvana",
+            "title": "Собираемся и слушаем альбом Nirvana.",
+            "descr": "Это третий альбом группы...",
+            "time": "07.12.2022 | начало 18.00",
+            "datetime": "2022-12-07T18:00"
+            })
+          </div>
+          <div class="swiper-slide">
+            @@include('event-card.html', {
+            "class": "",
+            "img": "assets/images/picture_5.jpg",
+            "img_webp": "assets/images/events/nirvana.webp",
+            "alt": "nirvana",
+            "title": "Собираемся и слушаем альбом Nirvana.",
+            "descr": "Это третий альбом группы...",
+            "time": "07.12.2022 | начало 18.00",
+            "datetime": "2022-12-07T18:00"
+            })
+          </div>
+          <div class="swiper-slide">
+            @@include('event-card.html', {
+            "class": "",
+            "img": "assets/images/picture_6.jpg",
+            "img_webp": "assets/images/events/nirvana.webp",
+            "alt": "nirvana",
+            "title": "Собираемся и слушаем альбом Nirvana.",
+            "descr": "Это третий альбом группы...",
+            "time": "07.12.2022 | начало 18.00",
+            "datetime": "2022-12-07T18:00"
+            })
+          </div>
+          <!-- Здесь добавьте еще хотя бы три слайда по аналогии -->
+        </div>
+        <footer class="swiper-footer">
+          <button type="button" class="swiper-arrow-prev arrow arrow--left">
+            <svg class="arrow__icon" width="92" height="62">
+              <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+            </svg>
+          </button>
+          <div class="swiper-pagination"></div>
+          <button type="button" class="swiper-arrow-next arrow">
+            <svg class="arrow__icon" width="92" height="62">
+              <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+            </svg>
+          </button>
+        </footer>
+      </div>
+      <a href="#" class="upcoming__link link">Смотреть все</a>
+    </div>
+  </div>
+</section>
