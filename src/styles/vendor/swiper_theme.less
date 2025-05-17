@@ -102,3 +102,25 @@
   margin: 2px 3px;
 }
 
+.arrow {
+  &__icon {
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease;
+
+
+    &:hover {
+    filter: invert(21%) sepia(16%) saturate(7184%) hue-rotate(344deg) brightness(91%) contrast(86%);
+  }
+
+  }
+  
+
+  &--left {
+    .arrow__icon {
+      transform: rotate(180deg); 
+    }
+  
+  }
+}
+
+

@@ -987,6 +987,24 @@ button.swiper-pagination-bullet {
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 2px 3px;
 }
+.arrow__icon {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.arrow__icon:hover {
+  -webkit-filter: invert(21%) sepia(16%) saturate(7184%) hue-rotate(344deg) brightness(91%) contrast(86%);
+          filter: invert(21%) sepia(16%) saturate(7184%) hue-rotate(344deg) brightness(91%) contrast(86%);
+}
+.arrow--left .arrow__icon {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 .btn {
   display: inline-block;
   -webkit-box-sizing: border-box;
