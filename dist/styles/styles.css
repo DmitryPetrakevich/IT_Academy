@@ -463,7 +463,7 @@ textarea {
 .swiper-button-prev:after {
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
-  text-transform: none!important;
+  text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
@@ -1298,6 +1298,7 @@ button.swiper-pagination-bullet {
 .form__btn {
   max-width: 400px;
   width: 100%;
+  padding: 15px 150px;
 }
 .form__btns {
   display: -webkit-box;
@@ -1307,6 +1308,7 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 60px;
 }
 .form__check--mb40 {
   margin-bottom: 40px;
