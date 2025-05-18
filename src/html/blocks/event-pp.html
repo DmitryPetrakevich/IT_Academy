@@ -9,8 +9,8 @@
         </div>
         <div class="pp__wrapper">
             <h3 class="pp__title">
-                Заполните форму <br/>
-                и мы подберем площадку 
+                Заполните форму <br />
+                и мы подберем площадку
             </h3>
             <div class="pp__form form">
                 <div class="form__list">
@@ -65,13 +65,19 @@
                                 </option>
                             </select>
 
-                            <div class="form__field field">
-                                <h6 class="field__title">Дата проведения::</h6>
-                                <div class="field__inputs field__inputs--w55">
-                                    <input class="field__input field__input--w55 field__input--datetime" type="text" placeholder="ДД"/>
-                                    <input class="field__input field__input--w55 field__input--datetime" type="text" placeholder="ММ"/>
-                                    <input class="field__input field__input--w110 field__input--datetime" type="text" placeholder="ГГГГ"/>
-
+                            <div class="form__field field js-dateField">
+                                <h6 class="field__title">Дата проведения:</h6>
+                                <div class="field__date">
+                                    <div class="field__date-inputs">
+                                        <input class="field__date-input js-dateDay" type="text" placeholder="ДД"
+                                            readonly />
+                                        <input class="field__date-input js-dateMonth" type="text" placeholder="ММ"
+                                            readonly />
+                                        <input class="field__date-input field__date-input--year js-dateYear" type="text"
+                                            placeholder="ГГГГ" readonly />
+                                    </div>
+                                    <input class="field__date-picker js-dateInput" type="text" name="date" readonly
+                                        required />
                                 </div>
                             </div>
                         </div>
@@ -85,28 +91,30 @@
                                 <span class="field__label">
                                     Имя*
                                 </span>
-                                <input type="text" class="field__input" placeholder="Имя" name="name" required/>
+                                <input type="text" class="field__input" placeholder="Имя" name="name" required />
                             </label>
 
                             <label class="form__field form__field--w50 field">
                                 <span class="field__label">
                                     Фамилия*
                                 </span>
-                                <input type="text" class="field__input" placeholder="Фамилия" name="last_name" required/>
+                                <input type="text" class="field__input" placeholder="Фамилия" name="last_name"
+                                    required />
                             </label>
 
                             <label class="form__field form__field--w50 field">
                                 <span class="field__label">
                                     Телефон*
                                 </span>
-                                <input type="tel" class="field__input js-mobileMask" placeholder="+7()___ __ __" name="phone" required/>
+                                <input type="tel" class="field__input js-mobileMask" placeholder="+7()___ __ __"
+                                    name="phone" required />
                             </label>
 
                             <label class="form__field form__field--w50 field">
                                 <span class="field__label">
                                     Email*
                                 </span>
-                                <input type="email" class="field__input" placeholder="Email" name="email" required/>
+                                <input type="email" class="field__input" placeholder="Email" name="email" required />
                             </label>
                         </div>
                     </div>
@@ -118,7 +126,7 @@
                     </label>
 
                     <label class="form__check form__check--mb40  check">
-                        <input type="checkbox" class="check__input" name="agree" required /> 
+                        <input type="checkbox" class="check__input" name="agree" required />
                         <span class="check__mark"> </span>
                         <span class="check__label">
                             Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных

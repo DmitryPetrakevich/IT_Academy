@@ -1,0 +1,82 @@
+.field {
+  &__date {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+  }
+  &__date-inputs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 55px;
+    pointer-events: none;
+  }
+  &__date-input {
+    box-sizing: border-box;
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: @white;
+    padding: 0 5px;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center;
+    pointer-events: none;
+    @media @bw400 {
+      font-size: 14px;
+    }
+    &--year {
+      flex-grow: 1;
+      margin-right: 0;
+    }
+  }
+  &__date-picker {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer; 
+  }
+}
+.air-datepicker-overlay {
+  --adp-overlay-z-index: 119;
+}
+.air-datepicker {
+  --adp-z-index: 120;
+  --adp-width: 250px;
+  --adp-border-radius: 5px;
+  --adp-border-color-inner: @gray;
+  --adp-font-family: @font1;
+  --adp-day-name-color: @black;
+  --adp-day-name-color-hover: @red;
+  --adp-accent-color: @red_dark;
+  --adp-color-secondary: @red;
+  --adp-cell-background-color-selected: @red_dark;
+  --adp-cell-background-color-selected-hover: @red;
+  --adp-background-color-hover: @gray;
+  --adp-background-color-active: @gray_dark;
+}
+.air-datepicker-nav--title {
+  color: @black;
+}
+.air-datepicker-nav--title i {
+  color: inherit;
+}
+.air-datepicker-body--day-name,
+.air-datepicker-cell {
+  font-weight: 700;
+}
+.air-datepicker-cell.-disabled- {
+  pointer-events: none;
+}
