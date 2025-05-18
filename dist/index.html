@@ -481,7 +481,7 @@
             <div class="form__group">
               <div class="form__field form__field--mb30 field">
                 <h6 class="field__title">Планируемое количество посетителей:</h6>
-                <select name="amount" class="field__select">
+                <select name="amount" class="field__select js-selectric">
                   <option value="20">
                     до 20 человек
                   </option>
@@ -533,7 +533,7 @@
                   <span class="field__label">
                     Телефон*
                   </span>
-                  <input type="tel" class="field__input" placeholder="+7()___ __ __" name="phone" required />
+                  <input type="tel" class="field__input js-mobileMask" placeholder="+7()___ __ __" name="phone" required />
                 </label>
 
                 <label class="form__field form__field--w50 field">
@@ -575,6 +575,9 @@
   </div>
 
   <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+  <script src="scripts/jquery.selectric.min.js"></script>
+  <script src="scripts/jquery.mask.js"></script>
+
   <script src="scripts/swiper.min.js"> </script>
   <script src="scripts/main.min.js"> </script>
 
