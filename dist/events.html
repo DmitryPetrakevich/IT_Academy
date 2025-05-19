@@ -327,12 +327,13 @@
           <a href="" class="page-footer__nav-link">Контакты</a>
         </nav>
 
-        <form class="page-footer__form subscribe">
+        <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__form subscribe" id="js-subscribeForm">
+
           <h4 class="subscribe__title">
             Подпишись и будь в курсе происходящего
           </h4>
           <div class="subscribe__wrapper">
-            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            <input type="email" name="email" placeholder="Email" class="subscribe__input" required id="js-subscribeEmail" />
 
             <button type="submit" class="subscribe__submit"> Подписаться </button>
           </div>

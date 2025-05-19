@@ -3892,6 +3892,12 @@ body {
   vertical-align: middle;
   margin: 0;
 }
+.page-footer label.error,
+.page-footer span.error {
+  display: block;
+  margin: 10px 0 0;
+  color: red;
+}
 .pp {
   display: none;
   position: fixed;

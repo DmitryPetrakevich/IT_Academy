@@ -49,12 +49,31 @@
         });
     }
 
-    $('#testValidation').click(function () {
-        var isValid = eventForm.valid(); // Проверяет всю форму
-        console.log('Форма валидна?', isValid);
-
-        // Если нужно показать ошибки пользователю
-        eventForm.validate().form(); // Принудительно показывает ошибки
-    });
+    const subscribeForm = $("#js-subscribeForm");
+    if (subscribeForm.length) {
+        const subscribeAction = subscribeForm.attr("action");
+        const subscribeEmail = subscribeForm.find("#js-subscribeEmail");
+        subscribeForm.validate({
+            errorElement: "span",
+            submitHandler: function (form, event) {
+                event.preventDefault();
+                $.ajax({
+                    url: subscribeAction,
+                    method: "POST",
+                    data: {
+                        email: subscribeEmail.val()
+                    },
+                    success: function () {
+                        subscribeEmail.val("");
+                        subscribeEmail.blur();
+                        alert("Вы успешно подписались на рассылку новостей");
+                    },
+                    error: function () {
+                        alert("Что-то пошло не так, попробуйте еще раз");
+                    }
+                });
+            }
+        });
+    }
 
 })();
