@@ -446,7 +446,7 @@
           <br />
           и мы подберем площадку
         </h3>
-        <div class="pp__form form">
+        <div class="pp__form form" id="js-eventForm">
           <div class="form__list">
             <div class="form__field form__field--w50 field">
               <h6 class="field__title">
@@ -487,11 +487,11 @@
                   </option>
 
                   <option value="100">
-                    до 20 до 100 человек
+                    от 20 до 100 человек
                   </option>
 
                   <option value="500">
-                    до 100 до 500 человек
+                    от 100 до 500 человек
                   </option>
 
                   <option value="501">
@@ -499,7 +499,7 @@
                   </option>
                 </select>
 
-                <div class="form__field field js-dateField">
+                <div class="form__field field" id="js-dateField">
                   <h6 class="field__title">Дата проведения:</h6>
                   <div class="field__date">
                     <div class="field__date-inputs">
@@ -580,6 +580,9 @@
   <script src="scripts/jquery.selectric.min.js"></script>
   <script src="scripts/jquery.mask.js"></script>
   <script src="scripts/air-datepicker.js"></script>
+
+  <script src="scripts/jquery.validate.js"></script>
+  <script src="scripts/jquery.validate-init.js"></script>
 
   <script src="scripts/swiper.min.js"> </script>
   <script src="scripts/main.min.js"> </script>
