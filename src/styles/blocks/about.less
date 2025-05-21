@@ -1,6 +1,6 @@
 .about {
     padding-bottom: 90px;
-    
+
     &__container {
         .conteiner;
     }
@@ -15,16 +15,26 @@
         font-size: 44px;
         font-weight: 700;
         color: @black;
+
         &--w868 {
             max-width: 868px;
             width: 100%;
         }
+
         // &--mt {
         //     margin-top: -120px;
         // }
 
         &--2 {
             grid-area: title;
+        }
+
+        @media @bw768 {
+            font-size: 26px;
+        }
+
+        @media @bw320 {
+            font-size: 18px;
         }
     }
 
@@ -35,10 +45,12 @@
         font-weight: 400;
         font-size: 18px;
         color: @black;
+
         &--2 {
             grid-area: text;
             margin-left: auto;
         }
+
         &--mb90 {
             margin-bottom: 90px;
 
@@ -49,6 +61,7 @@
         grid-area: picture1;
         position: relative;
         display: block;
+
         // width: 65.217%;
         &::before {
             content: '';
@@ -69,10 +82,10 @@
 
     &__block2 {
         display: grid;
-        grid-template-areas: 
-        "picture1 picture1 picture2"
-        "title title picture2"
-        "text text text";
+        grid-template-areas:
+            "picture1 picture1 picture2"
+            "title title picture2"
+            "text text text";
         gap: 60px;
         grid-template-columns: 1fr 1fr 404px;
     }
@@ -85,6 +98,7 @@
         // max-width: 404px;
         position: relative;
         display: block;
+
         &::before {
             content: '';
             display: block;
@@ -107,6 +121,7 @@
         position: relative;
         box-sizing: border-box;
         padding: 18px 9px 0 40px;
+
         &::before {
             content: '';
             position: absolute;
@@ -139,5 +154,7 @@
         max-width: 344px;
         width: 100%;
     }
+
     
+
 }

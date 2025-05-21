@@ -14,6 +14,16 @@
         text-align: center;
         vertical-align: middle;
         text-transform: uppercase;
+
+        @media @bw768 {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        @media @bw320 {
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
     }
 
     &__buttons {
@@ -21,13 +31,27 @@
         justify-content: center;
         gap: 105px;
         flex-wrap: wrap;
+
+        @media @bw1020 {
+            gap: 80px;
+
+        }
+
+        @media @bw768 {
+            gap: 50px;
+
+        }
+
+        // @media @bw650 {
+        //     gap: 50px;
+        // }
     }
 
     &__button {
         width: 260px;
         height: 52px;
         gap: 10px;
-        padding:  15px 40px;
+        padding: 15px 40px;
         background-color: none;
 
         &--red {

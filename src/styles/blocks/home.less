@@ -1,16 +1,25 @@
 .home {
-    padding: 100px 0;
-                
-    &__listing {
-      margin-bottom: 95px;
-      
+  padding: 100px 0;
+
+  &__listing {
+    margin-bottom: 95px;
+
+  }
+
+  &__offers {
+    margin-bottom: 200px;
+
+    @media @bw768 {
+      margin-bottom: 130px;
     }
 
-    &__offers {
-      margin-bottom: 200px;
-    }
-    &__offers-listing {
-      margin-bottom: 100px;
-      
+    @media @bw320 {
+      margin-bottom: 80px;
     }
   }
+
+  &__offers-listing {
+    margin-bottom: 100px;
+
+  }
+}
