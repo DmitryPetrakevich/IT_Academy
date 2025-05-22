@@ -61,6 +61,7 @@
         grid-area: picture1;
         position: relative;
         display: block;
+        min-width: 150px;
 
         // width: 65.217%;
         &::before {
@@ -88,9 +89,11 @@
             "text text text";
         gap: 60px;
         grid-template-columns: 1fr 1fr 404px;
+        // grid-template-columns: 1fr 1fr minmax(100px, 1fr);
     }
 
     &__picture2 {
+        min-width: 100px;
         grid-area: picture2;
         // margin-top: -280px;
         align-self: flex-end;

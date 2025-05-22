@@ -995,10 +995,11 @@ button.swiper-pagination-bullet {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 .arrow__icon:hover {
-  -webkit-filter: invert(21%) sepia(16%) saturate(7184%) hue-rotate(344deg) brightness(91%) contrast(86%);
-          filter: invert(21%) sepia(16%) saturate(7184%) hue-rotate(344deg) brightness(91%) contrast(86%);
+  color: #8C3324;
 }
 .arrow--left .arrow__icon {
   -webkit-transform: rotate(180deg);
@@ -4045,6 +4046,7 @@ body {
   grid-area: picture1;
   position: relative;
   display: block;
+  min-width: 150px;
 }
 .about__picture::before {
   content: '';
@@ -4068,6 +4070,7 @@ body {
   grid-template-columns: 1fr 1fr 404px;
 }
 .about__picture2 {
+  min-width: 100px;
   grid-area: picture2;
   align-self: flex-end;
   position: relative;
