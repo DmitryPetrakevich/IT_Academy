@@ -2985,6 +2985,13 @@ body {
   margin-bottom: 15px;
 }
 .subscribe__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3898,7 +3905,7 @@ body {
 .page-footer label.error,
 .page-footer span.error {
   display: block;
-  margin: 10px 0 0;
+  margin: 5px 0 0;
   color: red;
 }
 .pp {
@@ -4769,6 +4776,9 @@ body {
   }
   .page-footer__socials {
     gap: 40px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .about__container {
     padding-left: 20px;
@@ -4878,6 +4888,13 @@ body {
     margin-bottom: 40px;
     font-size: 13px;
     line-height: 20px;
+  }
+  .subscribe__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 80px;
   }
 }
 @media (max-width: 319px) {
