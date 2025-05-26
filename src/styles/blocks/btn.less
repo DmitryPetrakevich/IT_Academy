@@ -5,7 +5,7 @@
     border: 1px solid #1e1e1e;
     background-color: transparent;
     outline: none;
-    color:  #1e1e1e;
+    color: #1e1e1e;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -15,16 +15,22 @@
     overflow: hidden;
     cursor: pointer;
 
+    &--red {
+        background-color: #BC3324;
+        color: #FFFFFF;
+        border: none;
+    }
+
     &:active {
         background-color: #1e1e1e;
         color: white;
     }
 
     &:hover {
-        @media (hover: hover)  {
+        @media (hover: hover) {
             background-color: #1e1e1e;
             color: white;
-            
+
         }
     }
 }
