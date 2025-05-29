@@ -10,6 +10,12 @@
     overflow-y: auto;
     z-index: 110;
     background-color: @gray;
+
+    @media @bw600 {
+        padding: 90px 25px 25px;
+
+    }
+
     // display: none;
     @supports (backdrop-filter: blur(25px)) {
         background-color: @black_40;
@@ -29,6 +35,10 @@
         background-repeat: repeat;
         background-position: 0 0;
         background-size: auto;
+
+        @media @bw600 {
+            padding: 70px 20px 20px;
+        }
     }
 
     &__title {
@@ -44,6 +54,14 @@
         line-height: 30px;
         letter-spacing: 0.44px;
         color: @white;
+
+        @media @bw600 {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 2%;
+            vertical-align: middle;
+        }
     }
 
     &__sticky-close {
@@ -70,9 +88,17 @@
         background-color: @black;
         color: @white;
         transition: background-color 0.2s;
+
+        @media @bw600 {
+            width: 35px;
+            height: 35px;
+            right: -40px;
+            top: -90px;
+        }
+
         &:hover {
             @media (hover:hover) {
-                background-color: @red_dark;   
+                background-color: @red_dark;
             }
         }
     }

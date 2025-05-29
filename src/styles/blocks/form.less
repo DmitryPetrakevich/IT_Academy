@@ -5,6 +5,11 @@
         width: 100%;
         row-gap: 30px;
         column-gap: 60px;
+
+        @media @bw600 {
+            flex-direction: column;
+        }
+
         &--mb50 {
             margin-bottom: 50px;
         }
@@ -12,6 +17,10 @@
 
     &__group {
         width: calc(50% - 30px);
+
+        @media @bw600 {
+            width: 100% !important;
+        }
     }
 
     &__field {
@@ -20,23 +29,68 @@
 
         &--w50 {
             width: calc(50% - 30px);
+
+            @media @bw600 {
+                width: 100% !important;
+            }
         }
 
         &--mb30 {
             margin-bottom: 30px;
         }
-    } 
+    }
 
     &__btn {
+        display: flex;
+        justify-content: center;
         max-width: 400px;
         width: 100%;
         padding: 15px 150px;
+
+        @media @bw600 {
+            padding: 15px 80px;
+        }
+    }
+
+    &__btn--close {
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        color: #1e1e1e;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            color: @red;
+        }
     }
 
     &__btns {
         display: flex;
+        width: 100%;
         flex-direction: row;
-        gap: 60px;
+        gap: 200px;
+
+        @media @bw960 {
+            gap: 100px;
+        }
+
+        @media @bw600 {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        @media @bw650 {
+            gap: 50px;
+        }
     }
 
     &__check {

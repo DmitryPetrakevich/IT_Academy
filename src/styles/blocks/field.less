@@ -7,6 +7,11 @@
         line-height: 25px;
         color: @black;
 
+        @media @bw600 {
+            font-size: 16px;
+        }
+
+
         &--mb7 {
             margin-bottom: 7px;
         }
@@ -59,9 +64,7 @@
         }
     }
 
-    &__textarea {
-
-    }
+    &__textarea {}
 
     &__label {
         display: block;
@@ -69,12 +72,19 @@
         font-size: 16px;
         line-height: 22px;
         color: @black;
+
         &--textarea {
-        font-weight: 700;
-        font-family: @font1;
-        font-size: 18px;
-        line-height: 25px;
-        color: @black;
+            font-weight: 700;
+            font-family: @font1;
+            font-size: 18px;
+            line-height: 25px;
+            color: @black;
         }
+    }
+
+    label.error,
+    span.error {
+        display: block;
+        margin: 5px 0 0;
     }
 }
