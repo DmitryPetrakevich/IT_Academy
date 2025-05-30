@@ -2191,8 +2191,8 @@ button.swiper-pagination-bullet {
   line-height: 20px;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  -webkit-transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s;
   overflow: hidden;
   cursor: pointer;
 }
@@ -3934,6 +3934,17 @@ body {
   display: flex;
   min-width: 160px;
   gap: 45px;
+}
+.page-footer__socials-svg {
+  color: white;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.page-footer__socials-svg:hover {
+  color: #8C3324;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .page-footer-tagree {
   font-family: Open Sans;

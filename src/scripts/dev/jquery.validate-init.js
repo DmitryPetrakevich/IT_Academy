@@ -59,7 +59,6 @@
         }, duration);
     }
 
-
     const subscribeForm = $("#js-subscribeForm");
     if (subscribeForm.length) {
         const subscribeAction = subscribeForm.attr("action");
@@ -77,6 +76,7 @@
                     success: function () {
                         subscribeEmail.val("");
                         subscribeEmail.blur();
+                        subscribeForm.find('[name="agree"]').prop('checked', false); 
                         showToast("Вы успешно подписались на рассылку новостей");
                     },
                     error: function () {
