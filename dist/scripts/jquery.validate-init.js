@@ -49,6 +49,17 @@
         });
     }
 
+    function showToast(message, duration = 3000) {
+        const toast = document.getElementById("toast");
+        toast.textContent = message;
+        toast.classList.add("show");
+
+        setTimeout(() => {
+            toast.classList.remove("show");
+        }, duration);
+    }
+
+
     const subscribeForm = $("#js-subscribeForm");
     if (subscribeForm.length) {
         const subscribeAction = subscribeForm.attr("action");
@@ -66,10 +77,10 @@
                     success: function () {
                         subscribeEmail.val("");
                         subscribeEmail.blur();
-                        alert("Вы успешно подписались на рассылку новостей");
+                        showToast("Вы успешно подписались на рассылку новостей");
                     },
                     error: function () {
-                        alert("Что-то пошло не так, попробуйте еще раз");
+                        showToast("Что-то пошло не так, попробуйте еще раз");
                     }
                 });
             }
