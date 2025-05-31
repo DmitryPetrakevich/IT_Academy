@@ -49,15 +49,18 @@
         });
     }
 
-    function showToast(message, duration = 3000) {
+    function showToast(message, duration = 3000, type) {
         const toast = document.getElementById("toast");
         toast.textContent = message;
-        toast.classList.add("show");
+        toast.classList.remove("toast-success", "toast-error", "show");
+
+        toast.classList.add(type === "success" ? "toast-success" : "toast-error", "show");
 
         setTimeout(() => {
-            toast.classList.remove("show");
+            toast.classList.remove("toast-success", "toast-error", "show");
         }, duration);
     }
+
 
     const subscribeForm = $("#js-subscribeForm");
     if (subscribeForm.length) {
@@ -76,11 +79,11 @@
                     success: function () {
                         subscribeEmail.val("");
                         subscribeEmail.blur();
-                        subscribeForm.find('[name="agree"]').prop('checked', false); 
-                        showToast("Вы успешно подписались на рассылку новостей");
+                        subscribeForm.find('[name="agree"]').prop('checked', false);
+                        showToast("Вы успешно подписались на рассылку новостей", 3000, "success");
                     },
                     error: function () {
-                        showToast("Что-то пошло не так, попробуйте еще раз");
+                        showToast("Что-то пошло не так, попробуйте еще раз", 3000, "error");
                     }
                 });
             }

@@ -2177,6 +2177,47 @@ button.swiper-pagination-bullet {
 .air-datepicker-cell.-disabled- {
   pointer-events: none;
 }
+#toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  padding: 16px 20px 16px 48px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  /* для анимации появления */
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+.toast-success {
+  background-color: #4caf50;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' fill='white' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.485 1.929a1 1 0 0 1 1.415 1.414l-8.072 8.072a1 1 0 0 1-1.414 0L1.1 7.1A1 1 0 0 1 2.515 5.686l3.9 3.9 7.07-7.07Z'/%3E%3C/svg%3E");
+}
+.toast-error {
+  background-color: #c22c2c;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' fill='white' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+#toast.show {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
 .btn {
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -3937,8 +3978,10 @@ body {
 }
 .page-footer__socials-svg {
   color: white;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .page-footer__socials-svg:hover {
   color: #8C3324;

@@ -286,5 +286,28 @@
     });
   }
 
+  document.addEventListener("DOMContentLoaded", () => {
+  window.showToast = function (message, duration = 3000, type = "success") {
+    const toast = document.getElementById("toast");
+    if (!toast) return;
+
+    toast.className = "toast";
+
+    if (type === "success") {
+      toast.classList.add("toast--success");
+    } else if (type === "error") {
+      toast.classList.add("toast--error");
+    }
+
+    toast.textContent = message;
+    toast.classList.add("show");
+
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, duration);
+  };
+});
+
+
 })();
 
