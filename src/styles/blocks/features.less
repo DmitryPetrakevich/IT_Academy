@@ -6,8 +6,13 @@
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         text-align: center;
         flex-wrap: wrap;
+        gap: 60px;
+
+        @media @bw768 {
+            justify-content: center;
+        }
     }
 }

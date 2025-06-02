@@ -2853,6 +2853,7 @@ body {
   text-align: center;
   vertical-align: middle;
   color: #1F1E1E;
+  max-width: 280px;
 }
 .features__container {
   -webkit-box-sizing: border-box;
@@ -2868,12 +2869,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 60px;
 }
 .card-event {
   display: -webkit-box;
@@ -4833,6 +4835,11 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .features__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .listing {
     padding-left: 20px;
     padding-right: 20px;
@@ -5055,6 +5062,9 @@ body {
   }
   .selectric-wrapper::before {
     right: 17px;
+  }
+  .feature__img {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 399px) {
