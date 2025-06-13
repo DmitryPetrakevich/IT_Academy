@@ -286,28 +286,47 @@
     });
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-  window.showToast = function (message, duration = 3000, type = "success") {
-    const toast = document.getElementById("toast");
-    if (!toast) return;
+  
 
-    toast.className = "toast";
 
-    if (type === "success") {
-      toast.classList.add("toast--success");
-    } else if (type === "error") {
-      toast.classList.add("toast--error");
+
+
+
+
+
+console.log("Hello");
+  document.addEventListener("DOMContentLoaded", function () {
+    const checkboxes = document.querySelectorAll(".check__input");
+    const seats = document.querySelectorAll(".reserve__scene circle");
+    const tables = document.querySelectorAll(".reserve__scene rect"); // Столы
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+            const tableId = this.dataset.tableId;
+            const tablePrice = this.closest(".reserve__check").dataset.price; // Получаем цену
+            const color = tablePrice == "1400" ? "#BC3324" : "#1F1E1E"; // Красный для дорогих столов, черный для дешевых
+
+            toggleSelection(tableId, this.checked, color);
+        });
+    });
+
+    function toggleSelection(tableId, isChecked, color) {
+        seats.forEach((seat) => {
+            if (seat.dataset.tableId === tableId) {
+                seat.style.fill = isChecked ? color : "transparent";
+            }
+        });
+
+        tables.forEach((table) => {
+            if (table.dataset.tableId === tableId) {
+                table.style.fill = isChecked ? color : "transparent";
+            }
+        });
     }
-
-    toast.textContent = message;
-    toast.classList.add("show");
-
-    setTimeout(() => {
-      toast.classList.remove("show");
-    }, duration);
-  };
 });
 
+
+  
 
 })();
 
