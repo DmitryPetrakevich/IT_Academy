@@ -295,22 +295,24 @@
 
 
 console.log("Hello");
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const checkboxes = document.querySelectorAll(".check__input");
-    const seats = document.querySelectorAll(".reserve__scene circle");
+    const seats = document.querySelectorAll(".reserve__scene circle"); // Стулья
     const tables = document.querySelectorAll(".reserve__scene rect"); // Столы
+    const numbers = document.querySelectorAll(".reserve__scene .table-number"); // Только номера столов!
 
     checkboxes.forEach((checkbox) => {
         checkbox.addEventListener("change", function () {
             const tableId = this.dataset.tableId;
-            const tablePrice = this.closest(".reserve__check").dataset.price; // Получаем цену
-            const color = tablePrice == "1400" ? "#BC3324" : "#1F1E1E"; // Красный для дорогих столов, черный для дешевых
+            const tablePrice = this.closest(".reserve__check").dataset.price;
+            const color = tablePrice === "1400" ? "#BC3324" : "#1F1E1E";
+            const textColor = this.checked ? "#FFFFFF" : "#1F1E1E";
 
-            toggleSelection(tableId, this.checked, color);
+            toggleSelection(tableId, this.checked, color, textColor);
         });
     });
 
-    function toggleSelection(tableId, isChecked, color) {
+    function toggleSelection(tableId, isChecked, color, textColor) {
         seats.forEach((seat) => {
             if (seat.dataset.tableId === tableId) {
                 seat.style.fill = isChecked ? color : "transparent";
@@ -322,8 +324,19 @@ console.log("Hello");
                 table.style.fill = isChecked ? color : "transparent";
             }
         });
+
+        numbers.forEach((number) => {
+            if (number.dataset.tableId === tableId) {
+                number.setAttribute("fill", textColor);
+                number.removeAttribute("stroke"); // Убираем границу, если она мешает изменению цвета
+            }
+        });
     }
 });
+
+
+
+
 
 
   
