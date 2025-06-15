@@ -339,6 +339,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const checkboxes = document.querySelectorAll(".check__input");
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", () => {
+            const price = +checkbox.closest(".reserve__check").dataset.price;
+            const qtyEl = document.querySelector(`.reserve__qty[data-price="${price}"]`);
+            const sumEl = qtyEl?.nextElementSibling;
+
+            if (!qtyEl || !sumEl) return;
+
+            let qty = +qtyEl.textContent;
+            qtyEl.textContent = checkbox.checked ? qty + 1 : Math.max(0, qty - 1);
+            sumEl.textContent = +qtyEl.textContent * price;
+
+            updateTotal();
+        });
+    });
+
+    function updateTotal() {
+        const totalEl = document.querySelector(".reserve__total");
+        const allSums = document.querySelectorAll(".reserve__sum");
+
+        const total = Array.from(allSums)
+            .reduce((acc, el) => acc + +el.textContent, 0);
+
+        totalEl.textContent = total;
+    }
+});
+
+
+
+
+
+
+
   
 
 })();
